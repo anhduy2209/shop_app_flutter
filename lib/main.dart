@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: bgColor,
         fontFamily: 'Gordita',
-        textTheme: TextTheme(bodyText2: TextStyle(color: Colors.black54)),
+        textTheme: TextTheme(bodyMedium: TextStyle(color: Colors.black54)),
         primarySwatch: Colors.blue,
       ),
       home: HomeScreen(),

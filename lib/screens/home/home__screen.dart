@@ -3,14 +3,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shop_app/constants.dart';
-import 'package:shop_app/models/product.dart';
 
 import '../../component/categories.dart';
 import '../../component/new__arrival.dart';
 import '../../component/popular.dart';
-import '../../component/product__card.dart';
 import '../../component/search__form.dart';
-import '../../component/section__title.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -32,7 +29,7 @@ class HomeScreen extends StatelessWidget {
             SizedBox(width: defaultPadding / 2),
             Text(
               "Thuan An, Binh Duong",
-              style: Theme.of(context).textTheme.subtitle2,
+              style: Theme.of(context).textTheme.titleSmall,
             )
           ],
         ),
@@ -55,7 +52,7 @@ class HomeScreen extends StatelessWidget {
                 'Explore',
                 style: Theme.of(context)
                     .textTheme
-                    .headline5!
+                    .headlineSmall!
                     .copyWith(fontWeight: FontWeight.w500),
               ),
               Text(

@@ -3,8 +3,6 @@
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
-import '../models/product.dart';
-import 'section__title.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({
@@ -60,7 +58,7 @@ class ProductCard extends StatelessWidget {
                 SizedBox(width: defaultPadding / 4),
                 Text(
                   "\$" + price.toString(),
-                  style: Theme.of(context).textTheme.subtitle2,
+                  style: Theme.of(context).textTheme.titleSmall,
                 )
               ],
             )
